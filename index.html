@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fighting Styles & Martial Arts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #c0392b;
+    }
+
+    .style-card {
+      background-color: #eaeaea;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 5px solid #c0392b;
+    }
+
+    button {
+      display: block;
+      margin: 2rem auto 1rem;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #c0392b;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a93226;
+    }
+
+    #more-info {
+      display: none;
+      padding: 1rem;
+      background-color: #fceae9;
+      border-left: 4px solid #a93226;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Fighting Styles & Martial Arts</h1>
+    <p>Fighting includes various combat styles developed for self-defense, competition, and discipline.</p>
+
+    <div class="style-card">
+      <h2>Boxing</h2>
+      <p>A combat sport focused on punches, footwork, and head movement.</p>
+    </div>
+
+    <div class="style-card">
+      <h2>Muay Thai</h2>
+      <p>Known as the "Art of Eight Limbs", it uses fists, elbows, knees, and shins.</p>
+    </div>
+
+    <div class="style-card">
+      <h2>Brazilian Jiu-Jitsu</h2>
+      <p>A grappling-based martial art focusing on ground control and submissions.</p>
+    </div>
+
+    <div class="style-card">
+      <h2>Taekwondo</h2>
+      <p>Korean martial art emphasizing high kicks, fast movement, and discipline.</p>
+    </div>
+
+    <button onclick="toggleMore()">Learn More</button>
+
+    <div id="more-info">
+      <p>
+        Martial arts are more than physical fighting techniques — they build character, focus, and mental strength. Whether practiced for sport, self-defense, or fitness, each style has unique traditions and training methods.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function toggleMore() {
+      const moreInfo = document.getElementById("more-info");
+      if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+        moreInfo.style.display = "block";
+      } else {
+        moreInfo.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
